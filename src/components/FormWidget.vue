@@ -31,20 +31,20 @@ const widgetType = $computed(() => `"${props.data.type ?? "[None]"}"`);
 
 // Table containing metadata for each widget type
 const info = {
-  dropdown:      { class: WidgetDropdown,      label: LabelType.LabelTag,  required: ["name", "options"] },
-  heading:       { class: WidgetHeading,       label: LabelType.None,      required: ["name"] },
-  label:         { class: WidgetLabel,         label: LabelType.None,      required: ["name"] },
-  text:          { class: WidgetInput,         label: LabelType.LabelTag,  required: ["name"] },
-  number:        { class: WidgetInput,         label: LabelType.LabelTag,  required: ["name"] },
-  checkbox:      { class: WidgetInput,         label: LabelType.LabelTag,  required: ["name"] },
-  multicheckbox: { class: WidgetMultiCheckbox, label: LabelType.PlainText, required: ["name", "options"] },
-  picture:       { class: WidgetPicture,       label: LabelType.None,      required: ["file"] },
-  positions:     { class: WidgetPositions,     label: LabelType.PlainText, required: ["name", "file"] },
-  radio:         { class: WidgetRadio,         label: LabelType.PlainText, required: ["name", "options"] },
-  spacer:        { class: WidgetSpacer,        label: LabelType.None,      required: [] },
-  spinbox:       { class: WidgetSpinbox,       label: LabelType.LabelTag,  required: ["name"] },
-  stopwatch:     { class: WidgetStopwatch,     label: LabelType.PlainText, required: ["name"] },
-  textarea:      { class: WidgetTextarea,      label: LabelType.LabelTag,  required: ["name"] }
+  dropdown:      { class: WidgetDropdown,      label: LabelType.LabelTag,  required: ["name", "options"] }, //dropdown selection
+  heading:       { class: WidgetHeading,       label: LabelType.None,      required: ["name"] },            //text heading
+  label:         { class: WidgetLabel,         label: LabelType.None,      required: ["name"] },            //text label (same as heading?)
+  text:          { class: WidgetInput,         label: LabelType.LabelTag,  required: ["name"] },            //text box
+  number:        { class: WidgetInput,         label: LabelType.LabelTag,  required: ["name"] },            //standard web number entry
+  checkbox:      { class: WidgetInput,         label: LabelType.LabelTag,  required: ["name"] },            //singular checkbox
+  multicheckbox: { class: WidgetMultiCheckbox, label: LabelType.PlainText, required: ["name", "options"] }, //list of checkboxes
+  picture:       { class: WidgetPicture,       label: LabelType.None,      required: ["file"] },            //inline picture
+  positions:     { class: WidgetPositions,     label: LabelType.PlainText, required: ["name", "file"] },    //position map
+  radio:         { class: WidgetRadio,         label: LabelType.PlainText, required: ["name", "options"] }, //radio button list
+  spacer:        { class: WidgetSpacer,        label: LabelType.None,      required: [] },                  //empty spacer (how to increase size?)
+  spinbox:       { class: WidgetSpinbox,       label: LabelType.LabelTag,  required: ["name"] },            //fancy number entry (use this)
+  stopwatch:     { class: WidgetStopwatch,     label: LabelType.PlainText, required: ["name"] },            //stopwatch metric
+  textarea:      { class: WidgetTextarea,      label: LabelType.LabelTag,  required: ["name"] }             //large text box (comments)
 }[props.data.type];
 
 if (info === undefined)
