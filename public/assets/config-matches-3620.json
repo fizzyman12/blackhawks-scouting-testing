@@ -1,0 +1,175 @@
+{
+  "heading": "Charged Up - 2023",
+  "logo": "logo.png",
+  "pages": [
+    {
+      "name": "Setup",
+      "widgets": [
+        {
+          "name": "Scouter Name",
+          "type": "text",
+          "colspan": 2
+        },
+        {
+          "name": "Starting Position",
+          "type": "positions",
+          "file": "field.png",
+          "height": 200,
+          "colspan": 2
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "widgets": [
+        {
+          "name": "Left Community",
+          "type": "checkbox"
+        },
+        {
+          "type": "picture",
+          "file": "grid.png",
+          "height": 300,
+          "row": 4,
+          "col": 3,
+          "rowspan": 4
+        },
+        {
+          "name": "Top Cones Scored",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 4,
+          "col": 1
+        },
+        {
+          "name": "Top Cubes Scored",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "col": 1
+        },
+        {
+          "name": "Middle Cones Scored",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "name": "Middle Cubes Scored",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "name": "Bottom Cones Scored",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "name": "Bottom Cones Scored",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "type": "spacer",
+          "height": 40
+        },
+        {
+          "name": "Parked on Charging Station",
+          "type": "checkbox",
+          "labelColspan": 2
+        },
+        {
+          "name": "Charging Station Balanced",
+          "type": "checkbox",
+          "labelColspan": 2
+        },
+        {
+          "name": "Attempted to Auto-Balance?",
+          "type": "checkbox",
+          "labelColspan": 2
+        }
+      ]
+    },
+    {
+      "name": "Teleop",
+      "widgets": [
+        {
+          "type": "picture",
+          "file": "grid.png",
+          "height": 300,
+          "col": 3,
+          "rowspan": 4
+        },
+        {
+          "name": "Top Cones Scored",
+          "type": "spinbox",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "name": "Top Cubes Scored",
+          "type": "spinbox",
+          "col": 1
+        },
+        {
+          "name": "Middle Cones Scored",
+          "type": "spinbox"
+        },
+        {
+          "name": "Middle Cubes Scored",
+          "type": "spinbox"
+        },
+        {
+          "name": "Bottom Cones Scored",
+          "type": "spinbox"
+        },
+        {
+          "name": "Bottom Cubes Scored",
+          "type": "spinbox"
+        },
+        {
+          "name": "Co-Op Bonus",
+          "type": "checkbox"
+        },
+        {
+          "name": "Defense Rating",
+          "type": "dropdown",
+          "options": [
+            "Not Played",
+            "Not Effective",
+            "Average",
+            "Very Effective"
+          ],
+          "labelColspan": 2
+        }
+      ]
+    },
+    {
+      "name": "Endgame",
+      "widgets": [
+        {
+          "name": "Parking",
+          "type": "radio",
+          "options": [
+            "Parked+Balanced",
+            "Parked Only",
+            "In Community",
+            "None"
+          ],
+          "default": 3
+        },
+        {
+          "name": "Robots Docked",
+          "type": "spinbox",
+          "max": 3
+        },
+        {
+          "name": "Mechanical Failures",
+          "type": "text"
+        },
+        {
+          "name": "Comments",
+          "type": "textarea"
+        }
+      ]
+    }
+  ]
+}
