@@ -33,6 +33,7 @@ export interface WidgetData {
   options?: string[];
 
   // Type-specific optional fields
+  defaultOption?: boolean;
   width?: number;
   height?: number;
   allowMultiple?: boolean;
@@ -46,6 +47,12 @@ export interface WidgetData {
   lapLabel?: string;
   stopLabel?: string;
   maxLaps?: number;
+  validation?: ValidationData;
+}
+
+export interface ValidationData {
+  comparison: string;
+  value: number | number[];
 }
 
 export enum LabelType {
