@@ -3,7 +3,7 @@
   "logo": "logo.png",
   "pages": [
     {
-      "name": "Setup+Autonomous",
+      "name": "Setup",
       "widgets": [
         {
           "name": "Scouter Name",
@@ -16,7 +16,12 @@
           "file": "field.png",
           "height": 200,
           "colspan": 2
-        },
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "widgets": [
         {
           "name": "Left Community",
           "type": "checkbox"
@@ -30,19 +35,35 @@
           "rowspan": 4
         },
         {
-          "name": "Top Scored",
+          "name": "Top Cones Scored",
           "type": "spinbox",
           "prefix": "Auto",
           "row": 4,
           "col": 1
         },
         {
-          "name": "Middle Scored",
+          "name": "Top Cubes Scored",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "col": 1
+        },
+        {
+          "name": "Middle Cones Scored",
           "type": "spinbox",
           "prefix": "Auto"
         },
         {
-          "name": "Bottom Scored",
+          "name": "Middle Cubes Scored",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "name": "Bottom Cones Scored",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "name": "Bottom Cones Scored",
           "type": "spinbox",
           "prefix": "Auto"
         },
@@ -51,12 +72,17 @@
           "height": 40
         },
         {
-          "name": "Docked To Charging Station",
+          "name": "Parked on Charging Station",
           "type": "checkbox",
           "labelColspan": 2
         },
         {
-          "name": "Charging Station Engaged",
+          "name": "Charging Station Balanced",
+          "type": "checkbox",
+          "labelColspan": 2
+        },
+        {
+          "name": "Attempted to Auto-Balance?",
           "type": "checkbox",
           "labelColspan": 2
         }
@@ -73,21 +99,30 @@
           "rowspan": 4
         },
         {
-          "name": "Top Scored",
+          "name": "Top Cones Scored",
           "type": "spinbox",
           "row": 1,
           "col": 1
         },
         {
-          "name": "Middle Scored",
+          "name": "Top Cubes Scored",
+          "type": "spinbox",
+          "col": 1
+        },
+        {
+          "name": "Middle Cones Scored",
           "type": "spinbox"
         },
         {
-          "name": "Bottom Scored",
+          "name": "Middle Cubes Scored",
           "type": "spinbox"
         },
         {
-          "name": "Links Scored",
+          "name": "Bottom Cones Scored",
+          "type": "spinbox"
+        },
+        {
+          "name": "Bottom Cubes Scored",
           "type": "spinbox"
         },
         {
@@ -114,16 +149,12 @@
           "name": "Parking",
           "type": "radio",
           "options": [
-            "Docked+Engaged",
-            "Docked Only",
-            "Parked",
+            "Parked+Balanced",
+            "Parked Only",
+            "In Community",
             "None"
           ],
           "default": 3
-        },
-        {
-          "name": "Failed To Engage",
-          "type": "checkbox"
         },
         {
           "name": "Robots Docked",

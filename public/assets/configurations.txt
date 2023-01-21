@@ -1,4 +1,2 @@
 matches
 pits
-matches-custom
-matches-3620
