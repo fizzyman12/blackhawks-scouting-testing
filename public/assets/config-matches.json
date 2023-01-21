@@ -72,19 +72,17 @@
           "height": 40
         },
         {
-          "name": "Parked on Charging Station",
-          "type": "checkbox",
-          "labelColspan": 2
+          "type": "dropdown",
+          "name": "Auto Parking",
+          "options": [
+            "Did not park",
+            "Parked on Charging Station",
+            "Balanced on Charging Station"
+          ]
         },
         {
-          "name": "Charging Station Balanced",
           "type": "checkbox",
-          "labelColspan": 2
-        },
-        {
-          "name": "Attempted to Auto-Balance?",
-          "type": "checkbox",
-          "labelColspan": 2
+          "name": "Attempted to Auto Balance"
         }
       ]
     },
@@ -95,7 +93,7 @@
           "type": "picture",
           "file": "grid.png",
           "height": 300,
-          "col": 3,
+          "col": 4,
           "rowspan": 4
         },
         {
@@ -134,9 +132,9 @@
           "type": "dropdown",
           "options": [
             "Not Played",
-            "Not Effective",
+            "Below Average",
             "Average",
-            "Very Effective"
+            "Above Average"
           ],
           "labelColspan": 2
         }
@@ -147,14 +145,13 @@
       "widgets": [
         {
           "name": "Parking",
-          "type": "radio",
+          "type": "dropdown",
           "options": [
-            "Parked+Balanced",
-            "Parked Only",
+            "None",
             "In Community",
-            "None"
-          ],
-          "default": 3
+            "On Charging Station",
+            "Balacned Charging Station"
+          ]
         },
         {
           "name": "Robots Docked",
